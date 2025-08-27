@@ -1,0 +1,84 @@
+### 
+POST https://127.0.0.1/users/signup
+Content-Type: application/json
+
+{
+  "login":"admin2",
+  "email": "admin2@example.com",
+  "password": "1234"
+}
+###
+POST https://127.0.0.1/users/forgot-password
+Content-Type: application/json
+
+{
+  "email": "admin2@example.com"
+} 
+### 
+POST https://127.0.0.1/users/signin
+Content-Type: application/json
+
+{
+  "login":"admin2",
+  "email": "admin2@example.com",
+  "password": "1234"
+}
+###
+POST https://127.0.0.1/users/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJlNjZkMGViMy0zOWJmLTQzOTEtYTMwNi1mOTk3OTYwZDU5MjgiLCJpYXQiOjE3MzIyODE0NDMsImV4cCI6MTczMjI4NTA0M30.WU8hpT1_d_meq4VZdvNoqa8B6XxuGOa9BaJwLYMuWmo
+
+###
+POST https://127.0.0.1/categories/add
+Content-Type: application/json
+
+{
+  "name":"toys"
+}
+###
+GET https://127.0.0.1/ads/lowprice
+###
+GET https://127.0.0.1/ads
+###
+POST https://127.0.0.1/ads/search
+Content-Type: application/json
+
+{
+  "search":"стані"
+}
+
+### 
+POST https://127.0.0.1/users/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI3NTA5N2M2MC1iNDRmLTQ4MGYtOWQ3NS01ZmFkZjk1N2JlNTIiLCJpYXQiOjE3MzMxMjA4MzQsImV4cCI6MTczMzEyNDQzNH0.yX38wJ3meRUqh7TZR9tzMSioUSqxd7sAvT1ernpjGRA
+
+{
+  "login": "new",
+  "email": "new@example.com",
+  "password": "123"
+}
+
+### 
+PUT https://127.0.0.1/ads/dee0ee29-c12a-4f99-a66f-978b3fffbedb/deactivate
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJlNjZkMGViMy0zOWJmLTQzOTEtYTMwNi1mOTk3OTYwZDU5MjgiLCJpYXQiOjE3MzIyODE0OTIsImV4cCI6MTczMjI4NTA5Mn0.i7lMvMwhx-sHYd9yggx2VlXWmWvB9ipawvXxlcpjWss
+
+###
+PUT https://127.0.0.1/users/da6de974-688b-4398-8825-3f281866ccf2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI3NTA5N2M2MC1iNDRmLTQ4MGYtOWQ3NS01ZmFkZjk1N2JlNTIiLCJpYXQiOjE3MzMxMjA4MzQsImV4cCI6MTczMzEyNDQzNH0.yX38wJ3meRUqh7TZR9tzMSioUSqxd7sAvT1ernpjGRA
+
+
+{
+  "login": "newLogin", 
+  "email": "newemail@example.com",
+  "password": "12345",
+  "role": "admin"
+}
+###
+POST https://127.0.0.1/ads/3d3126bf-a0fb-4bec-8e2b-c42a4eb97091/message
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI3NTA5N2M2MC1iNDRmLTQ4MGYtOWQ3NS01ZmFkZjk1N2JlNTIiLCJpYXQiOjE3MzMxMjA4MzQsImV4cCI6MTczMzEyNDQzNH0.yX38wJ3meRUqh7TZR9tzMSioUSqxd7sAvT1ernpjGRA
+
+{
+  "body": "Is it still available?"
+}
